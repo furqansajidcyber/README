@@ -1,0 +1,28 @@
+# Basic Network Scanning with Nmap  
+**Cybersecurity Internship Task**
+
+## Objective
+Perform a safe network scan using Nmap to:
+- Discover open ports
+- Identify running services and versions
+- Detect operating system (when possible)
+- Understand potential security implications
+
+Important Ethical Note  
+All scans were performed **only on my own local virtual machines** on a private host-only network.  
+**No public/internet-facing systems** were scanned.
+Environment
+- **Date**: January 11, 2026
+- **Scanner OS**: Kali Linux 2025.4 (VirtualBox VM)
+- **Target systems**:
+  - localhost (127.0.0.1) – my Kali machine
+  - Metasploitable 2 VM (192.168.56.101) – deliberately vulnerable target
+- **Tool**: Nmap 7.98
+Commands Used
+```bash
+1. Check Nmap version
+nmap --version
+2. Very basic scan on myself
+nmap localhost
+3. Recommended detailed scan (what I submitted)
+sudo nmap -sS -sV -O -p- -T4 -oN nmap_scan_results.txt 192.168.56.101
