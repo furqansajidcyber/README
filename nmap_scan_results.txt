@@ -1,7 +1,7 @@
-# Basic Network Scanning with Nmap  
-**Cybersecurity Internship Task**
+Basic Network Scanning with Nmap  
+Cybersecurity Internship Task
 
-## Objective
+Objective
 Perform a safe network scan using Nmap to:
 - Discover open ports
 - Identify running services and versions
@@ -9,20 +9,35 @@ Perform a safe network scan using Nmap to:
 - Understand potential security implications
 
 Important Ethical Note  
-All scans were performed **only on my own local virtual machines** on a private host-only network.  
-**No public/internet-facing systems** were scanned.
+All scans were performed only on my own local virtual machines on a private host-only network.  
+No public/internet-facing systems were scanned.
 Environment
-- **Date**: January 11, 2026
-- **Scanner OS**: Kali Linux 2025.4 (VirtualBox VM)
-- **Target systems**:
+- Date: January 11, 2026
+- Scanner OS: Kali Linux 2025.4 (VirtualBox VM)
+- Target systems:
   - localhost (127.0.0.1) – my Kali machine
   - Metasploitable 2 VM (192.168.56.101) – deliberately vulnerable target
-- **Tool**: Nmap 7.98
+-Tool: Nmap 7.98
+Open Ports:
+21/tcp    open  ftp          vsftpd 2.3.4
+22/tcp    open  ssh          OpenSSH 4.7p1 Debian 8ubuntu1 (protocol 2.0)
+80/tcp    open  http         Apache httpd 2.2.8 ((Ubuntu) DAV/2)
+MAC Address: 08:00:27:XX:XX:XX (Oracle VirtualBox virtual NIC)
+Device type: general purpose
+Running: Linux 2.6.X
+OS CPE: cpe:/o:linux:linux_kernel:2.6
+OS details: Linux 2.6.9 - 2.6.33
 Commands Used
 ```bash
 1. Check Nmap version
 nmap --version
 2. Very basic scan on myself
 nmap localhost
-3. Recommended detailed scan (what I submitted)
+3. Recommended detailed scan
 sudo nmap -sS -sV -O -p- -T4 -oN nmap_scan_results.txt 192.168.56.101
+
+CONCLUSION: This exercise helped me understand:
+-How easy it is to discover services
+-Why version detection (-sV) is extremely valuable
+-The importance of keeping systems patched and firewalled
+-Never to expose management/database ports to the public internet
