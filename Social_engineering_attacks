@@ -1,0 +1,48 @@
+Introduction: Social engineering attacks are all about manipulation & tricking people into spilling secrets, clicking bad links or handing over access without realizing it. Unlike viruses that hack code these prey on human trust, curiosity, or fear. They're super common because, we're all busy and sometimes too quick to trust. Phishing is the email/text scam king, pretexting builds a fake story to con you, and baiting dangles something tempting like free stuff. In 2025, these attacks spiked with AI making them scarily realistic.How they operate, real hits on companies, and ways to fight back.
+1.Phishing Attacks
+Working and Explanation: Phishing is like fishing with a fake lure, attackers send emails, text or calls pretending to be someone legit (bank, boss, or Netflix) to snag your info. They create urgency: "Your account's hacked – click here to fix!" That link leads to a bogus site stealing your login or drops malware. Spear phishing targets specific people with personalized details, like your recent Amazon buy. Vishing (voice phishing) uses calls, and smishing hits texts.
+
+Impact:These can wipe out finances, leak data or lock systems with ransomware. Companies lose millions in downtime, lawsuits & lost trust think customers bailing after a breach. Globally, phishing caused over 80% of breaches in 2025.
+
+Real-World Examples: 
+-Change Healthcare (2024): Hackers phished an employee without MFA, stealing data for 100 million Americans. Impact? $2.5 billion in costs, disrupted prescriptions nationwide.
+-Pepco Group (2024): A phishing email tricked staff into sharing supplier data, leading to supply chain chaos and millions in losses for the retail giant.
+-StrelaStealer Campaign (2024-2025): AI-powered phishing emails stole Outlook credentials from 100+ orgs, spreading malware. One firm lost $1M in crypto.
+
+Mitigation: Hover over links before clicking, enable MFA everywhere, and train yourself to spot red flags like bad grammar or odd URLs. Use email filters and report suspicious stuff ASAP.
+
+2.Pretexting Attacks
+Working and Explanation: Pretexting is storytelling on steroids attackers craft a believable backstory to gain your trust and extract info. They might call as "IT support" needing your password for an "update," or pose as a colleague sharing a "confidential file." It often starts with research on LinkedIn or social media to make it personal. Deepfakes and AI voices made this scarier in 2025.
+
+Impact: It leads to identity theft, fraud, or full network breaches. Organisations face regulatory fines (GDPR hits hard) and reputational damage with clients ditching after leaked secrets.
+
+Real-World Examples
+-Hewlett-Packard Scandal (2006, but echoes in 2025): Investigators pretexted as board members to spy on journalists, leading to lawsuits and CEO resignation.
+-MGM Resorts (2023-2024): Attackers pretexted as help desk to reset creds, causing a $100M ransomware hit – slots down, guest data stolen.
+-Arup Deepfake (2024): Fraudsters used AI to impersonate a CFO in a video call, tricking an employee into wiring $25M. Total loss: Irrecoverable funds and shaken investor confidence.
+
+Mitigation: Verify requests through another channel call back using official numbers. Limit what you share online, and use secret questions or codes for sensitive chats.
+
+3.Baiting Attacks
+Working and Explanation: Baiting dangles a bait like a "free USB" left in a parking lot or a shady download promising free movies. When you bite (plug it in or click), malware sneaks in, stealing data or hijacking your device. It's physical or digital, exploiting curiosity. Quid pro quo is a variant: "Help me, get a reward."
+
+Impact: Malware can encrypt files for ransom or spy long-term. Businesses suffer data loss, operational halts & cleanup costs one infected machine can spread network-wide.
+
+Real-World Examples
+-Facebook & Google (2013-2017): A scammer baited with fake invoices, conning $120M via email promises. Impact: Massive financial hit and internal audits.
+-Toyota Boshoku (2019, similar in 2024 cases): Baited with urgent "payment updates," leading to $37M wire fraud. Echoed in 2024 supply chain baits.
+-Marks & Spencer Ransomware (2024): Likely started with baited malware links, disrupting 1,000+ stores and suspending online sales for days.
+
+Mitigation: Don't plug in unknown devices, scan downloads with antivirus, and be wary of "too good to be true" offers. Orgs should ban external media and train on safe habits.
+
+Overall Recommendations to Prevent Social Engineering Attacks From what I've dug up, prevention boils down to awareness and layers of defense no silver bullet, but these work in 2025:
+-Education First: Regular training simulations (like fake phishing tests) to spot tricks. Make it fun, not a chore.
+-Tech Safeguards: MFA, email filters & AI detectors for deepfakes. Update everything – patches close doors attackers love.
+-Culture of Caution: Encourage reporting without blame. Verify identities and limit info sharing.
+-Incident Plans: Have a response team ready. Tools like endpoint detection help catch breaches early.
+-Stay Updated: Follow trends – AI's making attacks smarter, so adapt.
+In places like India, with rising digital payments, these are crucial to avoid UPI scams or job frauds.
+
+Conclusion: Social engineering isn't going away it's getting craftier with tech. But understanding phishing, pretexting, and baiting, plus learning from messes like Change Healthcare or Arup, arms us better. Focus on people as your strongest (or weakest) link, and you'll cut risks big time.
+
+References: Cited sources from January 2026 web searches. 
