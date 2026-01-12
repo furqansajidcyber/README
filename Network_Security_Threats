@@ -1,0 +1,54 @@
+Research Report on Common Network Security Threats
+Intro
+Network security threats continue to evolve, posing significant risks to individuals, organizations, and critical infrastructure. This report focuses on three common threats: Denial of Service (DoS) attacks, Man in the Middle (MITM) attacks, and spoofing attacks. Each below explains how threats works, potential impact, real-world examples & mitigation strategies.
+
+1.Denial of Service (DoS) Attacks
+Explanation & Working: This attack aims to make a network resource, such as a website or server, unavailable to legitimate users by overwhelming it with excessive traffic or requests. In a basic DoS, a single attacker spams the target with fake data requests, exhausting resources like bandwidth, processing power or application limits. Distributed Denial of Service (DDoS) is a variant where multiple compromised devices (botnets) amplify the attack, making it harder to block. Common techniques include SYN floods (incomplete TCP connections), UDP floods (bogus packets) & application-layer attacks targeting specific services like HTTP.
+
+Impact: DoS attacks cause downtime, leading to financial losses from disrupted services, lost revenue, and recovery costs. They can also damage reputation and enable follow-on attacks by distracting security teams. In severe cases, they affect critical sectors like healthcare or finance, potentially endangering lives or economies.
+Real-World Examples: In 2025, Cloudflare mitigated a massive 7.3 Tbps DDoS attack that delivered 37.4 TB of traffic in just 45 seconds, targeting an unnamed customer.
+Q1 2025 saw a 358% year-over-year spike in DDoS attacks, with Cloudflare blocking 20.5 million incidents, often leveraging IoT botnets.
+A notable corporate DDoS in August 2025 was stopped by AI-driven defenses, highlighting the role of exposed devices in amplifying threats.
+
+Mitigation and Preventive Measures:
+-To defend against DoS attacks: Implement traffic filtering, rate limiting & IP reputation blocking to identify and drop malicious traffic.
+-Use Content Delivery Networks (CDNs) and Web Application Firewalls (WAFs) to distribute and scrub traffic.
+-Employ AI-based anomaly detection for real-time mitigation.
+-Conduct regular red team exercises and maintain incident response plans.
+-For 2025 threats, focus on rapid detection, as some attacks overwhelm systems in minutes.
+
+2.Man in the Middle (MITM) Attacks:
+Explanation & Working: This attack occurs when an attacker secretly intercepts and potentially alters communication between two parties, such as a user and a website, without their knowledge. The attacker positions themselves "in the middle" using techniques like ARP spoofing (faking network addresses), DNS spoofing (redirecting domain queries), or creating fake Wi-Fi hotspots. This allows eavesdropping, data theft, or injection of malicious content.
+
+Impact: MITM attacks compromise data confidentiality and integrity, leading to stolen credentials, financial fraud, or altered transactions. They can result in identity theft, ransomware deployment, or espionage, with long-term effects on trust and compliance.
+Real-World 
+
+Examples: Public Wi-Fi hotspots in cafes or airports are common vectors; in 2025, attackers used fake networks to intercept data from travelers.
+Compromised routers enabled MITM in home networks, as seen in mid-2025 incidents where hackers altered banking sessions.
+A 2025 attack on a corporate network involved SSL stripping to downgrade secure connections, stealing sensitive emails.
+
+Mitigation and Preventive Measures, Prevent MITM by:
+-Enforcing HTTPS everywhere and using HTTP Strict Transport Security (HSTS).
+-Employing VPNs for encrypted tunnels, especially on public networks.
+-Implementing certificate pinning and multi-factor authentication (MFA) to verify endpoints.
+-Regularly updating software and using intrusion detection systems to spot anomalies.
+
+3.Spoofing Attacks
+Explanation and How It Works: This involves forging identities to deceive systems or users, such as faking IP addresses, emails, or DNS records. Types include IP spoofing (masking source IP for unauthorized access), DNS spoofing (poisoning caches to redirect traffic), email spoofing (fake sender for phishing), and ARP spoofing (faking MAC addresses in local networks). Attackers exploit trust in communication protocols to gain access or intercept data.
+
+Impact: Spoofing enables phishing, data breaches, and unauthorized access, leading to financial losses, data theft, or amplified attacks like DDoS via reflection. It erodes trust in digital communications and can facilitate larger incidents like ransomware distribution.
+Real-World 
+
+Examples: In 2025, phishing attacks using email spoofing targeted organizations, with APT33 and APT39 groups spoofing identities to breach defense contractors.
+DNS spoofing in mid-2025 redirected users to fraudulent sites, compromising credentials in global phishing campaigns.
+A notable incident involved ARP spoofing in corporate networks, leading to data interception as part of broader supply chain attacks.
+
+Mitigation and Preventive MeasuresCombat spoofing with:
+-Authentication protocols like SPF, DKIM, and DMARC for email.
+-Anti-spoofing filters on routers and firewalls to validate source addresses.
+-Encryption (e.g., DNSSEC for DNS) and network segmentation to limit impact.
+-Employee training on phishing recognition and regular vulnerability scans.
+
+Conclusion: DoS, MITM, and spoofing attacks remain prevalent in 2025-2026 due to increasing connectivity and sophisticated tools. Understanding their mechanics and impacts is crucial for effective defense. Organizations should adopt layered security approaches, including technology, training, and proactive monitoring, to mitigate these threats. As cyber landscapes evolve, staying informed through reports like IBM's 2025 Threat Intelligence Index is essential.
+
+References: All sources cited inline from web searches conducted in January 2026.
