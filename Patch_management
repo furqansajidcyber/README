@@ -1,0 +1,13 @@
+1.Introduction:Patch management is critical cybersecutity process focussed on identfying, acquiring, testing and deploying updates to softwars, OS  and applications. These patches often fix security, culnerabilities, enhance system performance and ensure organizational compliance. This reduces the attack surafce and enhances an organization's overall security posture.d
+
+2.Importance:Keeping systems updates is one of the simplest yet most imapctful defences against cyber attacks. Threat actors frequently exploit known vulnerabilities often months or years after the patches are released. Patch management ensures these weaknesses are closed promptly.
+-Vulnerability mitigation: Prevents attackers from exploting security weaknesses.
+-System stability: Fixes bugs that may cause or perfomance issues.
+-Ensure compliance: Meets security standards (ISO 27001, NIST)
+-Reduces attack Surface: Keeps software updated, lowering exposure to cyber threats.
+-Protection againsst malware &  Zero day explots and loss of sensitive data: Limits the chances of ransopmware, priviledge escalations and remote code execution while also minimizing the risk of unauthorized access to data breaches.
+
+3.Risks of unpatched systems: Failing to patch systems exposes organizations to serious threats. Common consequences  include:
+-Cyber attacks: Unpatched vulnerabilities are majore attack vectors, leading to ransomeware, privilege escalations & unauthorized access.
+-Data breaches: Outdates systems enable attackers to bypass security controls & accesss sensitive data.
+-Operational disruptions unpatched software can cause system crashes, performance issues and downtime
