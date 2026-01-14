@@ -19,8 +19,11 @@
 -Stronger incident response:  Pacthes lowers the number of unnecessary alerts and noise captured by the outdated software.
 
 5.Best practices for effective patch management: 
--Establish formal patch management policy: Patch managemnt should have gulidelines and should adhere to established frameworks for 
--Maintain accurate real time inventory:
--Prioritize patches based on risk:
--Schedule and deploy patched:
--Verify, monitor and report after deployment:
+-Establish formal patch management policy: Create a written policy that defines patch owners, approvers, testers, deployers. Timeframes for different severity levels
+-Maintain accurate real time inventory: All servers, workstations, cloud instances, containers, IoT/OT devices must have an entry to know what systems should be patched.
+-Prioritize patches based on risk: CVSS score + real-world exploitability (especially CISA Known Exploited Vulnerabilities list — KEV).
+-Schedule and deploy patched: Manual patching doesn't scale in 2026. Automatic vulnerability scanning for Patch download & staging.
+-Verify, monitor and report after deployment: A bad patch can cause more business impact than the vulnerability it fixes. Test in lab/staging environment that mirrors production.
+-Use controlled, scheduled deployment windows: Deploy during low-impact periods whenever possible.
+
+Conclusion: Patch management remains a foundational element of cybersecurity. Ny applying patches regularly and addressing vulnerabilities promptl, organizations reduce the risk of cyber-attacks, maintain operational stability and ensure compliance. A well structured patch management strategynot only protects critical assets but also serves a key defensive mechanism against today's evolving cyber threats.
