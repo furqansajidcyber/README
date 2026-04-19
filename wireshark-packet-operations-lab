@@ -1,0 +1,77 @@
+Hands-on packet analysis and network traffic investigation using Wireshark. This project covers protocol statistics, packet filtering, DNS analysis, conversations, endpoints, and advanced filtering techniques through practical cybersecurity lab exercises.
+Wireshark Packet Operations Lab
+
+Overview
+This repository documents my hands-on learning and practical exercises focused on packet analysis using Wireshark in a controlled cybersecurity lab environment.
+The objective of this project was to understand how network traffic behaves at the packet level, analyze communication flows, and use filtering techniques to investigate suspicious or relevant traffic.
+
+Skills Practiced
+- Packet capture analysis
+- Network traffic investigation
+- DNS traffic inspection
+- Protocol hierarchy analysis
+- Endpoint identification
+- Conversation tracking
+- Packet filtering
+- Advanced Wireshark filters
+- Statistics interpretation
+- Incident investigation fundamentals
+
+Lab Tasks Completed
+
+1. Investigating Network Traffic Captures
+Loaded packet capture files (.pcapng) into Wireshark and reviewed packet-level communication.
+
+2. Statistics Analysis
+Used Wireshark Statistics tab to review:
+- Capture summary
+- Resolved addresses
+- Protocol hierarchy
+- Conversations
+- Endpoints
+- Packet lengths
+- DNS statistics
+
+3. Protocol Details
+Inspected individual packets to understand:
+- Source IP
+- Destination IP
+- Ports
+- Protocol behavior
+- Requests and responses
+
+4. Packet Filtering Principles
+Used filters to isolate relevant traffic.
+Examples:
+```wireshark
+ip.addr == 192.168.1.1
+tcp
+udp
+dns
+http
+
+5. Protocol Filters
+Focused on specific protocols such as:
+- DNS
+- TCP
+- UDP
+- HTTP
+
+6. Advanced Filtering
+Applied advanced conditions such as:
+dns.qry.name contains "google"
+tcp.flags.syn == 1
+ip.src == 10.0.0.5
+http.request.method == "GET"
+
+Key Learnings
+How packets move across a network
+Difference between protocols
+How to identify suspicious traffic
+How DNS queries/responses appear in captures
+How to narrow large captures using filters
+How analysts investigate packet-level evidence
+
+Tools Used
+Wireshark
+
