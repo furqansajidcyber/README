@@ -1,0 +1,65 @@
+Networking Fundamentals: Backbone of cybersecurity.
+- Traffic flow
+- Firewalls
+- DNS
+- Ports
+- Protocols
+- Detection
+
+Overview: This repo contains my notes and practical understanding of networking concepts essential for cybersecurity careers.
+
+Topics
+
+OSI Model
+1. Physical
+2. Data Link
+3. Network
+4. Transport
+5. Session
+6. Presentation
+7. Application
+
+Shortcut: All people seem to need data processing
+first letter of all the words are
+A-P-S-T-N-D-P
+7->1
+A will be application and so on
+
+TCP/IP Model
+- Network Access
+- Internet
+- Transport
+- Application
+
+Important Protocols & Ports
+- HTTP 80 / HTTPS 443
+- DNS 53
+- DHCP
+- FTP 20/21
+- SSH 22
+- SMTP 25
+- ICMP
+- TCP
+- UDP
+- Telnet 23
+- POP3 110
+- IMAP 143
+- RDP 3389
+
+IP Addressing
+- IPv4 
+32-bit Decimal Ex: 192.168.1.1
+- IPv6
+128 bit Hexadecima Ex:fe80::94db:946e:8d4e:129e
+- Private IP ranges
+- Public IP
+
+Subnetting Basics
+- CIDR
+- Network / Host
+
+Security Relevance
+- Packet flow
+- Firewall rules
+- Traffic analysis
+- Wireshark basics
