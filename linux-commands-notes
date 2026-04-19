@@ -1,0 +1,67 @@
+Cybersecurity relies heavily on Linux. SOC, pentesting, cloud security, DFIR, servers — all use Linux.
+Linux Commands Notes
+
+Overview: This repository contains my structured notes and hands-on practice of Linux commands commonly used in cybersecurity, system administration, and IT operations.
+
+Topics
+File & Directory Commands
+- pwd
+- ls
+- cd
+- mkdir
+- rmdir
+- touch
+- cp
+- mv
+- rm
+
+File Viewing
+- cat
+- less
+- more
+- head
+- tail
+
+Permissions
+- chmod
+- chown
+- sudo
+
+User Management
+- whoami
+- id
+- passwd
+
+Networking
+- ping
+- ifconfig / ip a
+- netstat
+- ss
+- curl
+- wget
+
+Process Management
+- ps
+- top
+- kill
+- pkill
+
+Searching
+- grep
+- find
+- locate
+
+Archives
+- tar
+- zip
+- unzip
+
+
+Why This Matters Linux is widely used in servers, SOC environments, cloud platforms, and penetration testing labs.
+
+
+Tools Used
+- Ubuntu
+- TryHackMe Labs
+
+---
