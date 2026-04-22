@@ -1,0 +1,60 @@
+What is Traffic Tunnelling?
+Traffic tunnelling is the process of encapsulating data inside another protocol so it can pass through networks securely or secretly.
+Legitimate Uses: Secure communication between networks, VPNs & Private network access
+Malicious Uses: Attackers use tunnelling to bypass firewalls/security tools by hiding data inside trusted protocols like: ICMP & DNS
+
+ICMP Analysis
+What is ICMP? Internet Control Message Protocol is mainly used for: Ping, Network troubleshooting & Error reporting
+Why Attackers Use ICMP: ICMP packets can carry extra payload data.
+Attackers may use it for: Data exfiltration, Command & Control (C2) & Hidden communication channels
+
+Signs of ICMP Tunnelling
+Large Number of ICMP Packets
+Unexpected high ICMP traffic.
+
+Large Packet Sizes
+Normal ping packets are often around 64 bytes.
+Large payloads may indicate tunnelling.
+
+Repeated Communication to Same Host
+Continuous ICMP requests/replies to one IP.
+
+Hidden Payload Data
+Suspicious raw data inside ICMP packets.
+
+DNS Analysis
+What is DNS? DNS converts domain names into IP addresses.
+Example: google.com → IP Address
+Why Attackers Use DNS: DNS is trusted and always allowed in most networks. Attackers hide data in DNS queries.
+Common DNS Tunnel Method: Encoded subdomains: ZXhhbXBsZWNvbW1hbmQ=.maliciousdomain.com
+
+The encoded section may contain: Commands, Data & Malware instructions
+
+Signs of DNS Tunnelling
+Very Long DNS Queries
+Long subdomains are suspicious.
+
+Random Strings
+Base64 / encoded text.
+Example: a8dh29shd82h2j.example.com
+
+High Volume of Queries to One Domain
+Repeated requests to same suspicious domain.
+
+Unusual Query Length
+
+Investigation Workflow
+ICMP
+Filter ICMP traffic
+Check packet sizes
+Check repeated destinations
+Inspect payload data
+Compare normal vs suspicious traffic
+
+DNS
+Filter DNS traffic
+Check query lengths
+Look for random strings
+Check repeated domains
+Count query frequency
+
