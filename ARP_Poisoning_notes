@@ -1,0 +1,45 @@
+ARP (Address Resolution Protocol) maps: IP Address → MAC Address. Used inside local networks so devices can communicate.
+Example: 192.168.1.1 = aa:bb:cc:dd:ee:ff
+What is ARP Poisoning?
+ARP Poisoning (ARP Spoofing / MITM) is when an attacker sends fake ARP replies to victims and gateway.
+Goal: Become Man-In-The-Middle, Intercept traffic, Sniff credentials/data, Modify traffic & Cause denial of service
+Important ARP Facts: Works only on Local Network, Not routable, No authentication, Trust-based protocol & Easy to abuse
+
+Normal ARP Workflow
+ARP Request (Broadcast)
+Who has 192.168.1.1?
+Tell 192.168.1.12
+ARP Reply: 192.168.1.1 is at aa:bb:cc:dd:ee:ff
+
+Attack Workflow
+Attacker sends: 192.168.1.1 is at attacker-MAC
+Victim updates ARP cache. Now traffic meant for gateway goes to attacker.
+
+Common Wireshark Filters
+Show ARP Traffic: arp
+ARP Requests: arp.opcode == 1
+ARP Replies: arp.opcode == 2
+Possible ARP Scan: arp.dst.hw_mac==00:00:00:00:00:00
+Duplicate IP Warning: arp.duplicate-address-detected
+Or arp.duplicate-address-frame
+Possible ARP Flooding: ((arp) && (arp.opcode == 1))
+
+Real Impact
+Credential theft
+Session hijacking
+Packet sniffing
+DNS manipulation
+Malware delivery
+
+Prevention
+Network Controls
+Dynamic ARP Inspection (DAI)
+Port Security
+VLAN segmentation
+Static ARP for critical systems
+
+Detection
+IDS/IPS alerts
+Wireshark
+arpwatch
+SIEM correlation
